@@ -1,0 +1,142 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 800px;
+  height: calc(800px - 20vw);
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  background-color: purple;
+}
+.grid-container .grid-item {
+  background-color: lightblue;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.grid-container .grid-item:nth-child(1) {
+  background-color: red;
+}
+.grid-container .grid-item:nth-child(2) {
+  background-color: orange;
+}
+.grid-container .grid-item:nth-child(3) {
+  background-color: yellow;
+}
+.grid-container .grid-item:nth-child(4) {
+  background-color: green;
+}
+.grid-container .grid-item:nth-child(5) {
+  background-color: aqua;
+}
+.grid-container .grid-item:nth-child(6) {
+  background-color: blue;
+}
+.grid-container .grid-item:nth-child(7) {
+  background-color: violet;
+}
+.grid-container .grid-item:nth-child(8) {
+  background-color: pink;
+}
+.grid-container .grid-item:nth-child(9) {
+  background-color: lightgreen;
+}
+.grid-container .grid-item:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=bundle.css.map */

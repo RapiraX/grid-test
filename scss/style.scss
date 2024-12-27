@@ -1,0 +1,56 @@
+$cube-size: 800px;
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 800px;
+    height: calc(800px - 20vw);
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: purple;
+    .grid-item {
+        background-color: lightblue;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+ 
+        &:nth-child(1) {
+            background-color: red;
+        }
+        &:nth-child(2) {
+            background-color: orange;
+        }
+        &:nth-child(3) {
+            background-color: yellow;
+        }
+        &:nth-child(4) {
+            background-color: green;
+        }
+        &:nth-child(5) {
+            background-color: aqua;
+        }
+        &:nth-child(6) {
+            background-color: blue;
+        }
+        &:nth-child(7) {
+            background-color: violet;
+        }
+        &:nth-child(8) {
+            background-color: pink;
+        }
+        &:nth-child(9) {
+            background-color: lightgreen;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
